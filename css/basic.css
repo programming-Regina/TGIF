@@ -1,0 +1,99 @@
+html {
+	overflow: -moz-scrollbars-vertical;
+	overflow-y: scroll;
+}
+
+body {
+	font-size: 12 px;
+	font-family: sans-serif;
+	background-color: aquamarine;
+}
+
+a {
+	color: black;
+}
+
+h2 {
+	margin-top: 100px;
+}
+
+#underlined {
+	text-decoration: underline;
+}
+
+#senate-data td,
+footer {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+#senate-data {
+	margin: auto;
+}
+
+#foot {
+	text-align: center;
+}
+
+#rightT {
+	display: inline-block;
+	float: right;
+}
+
+#leftT {
+	display: inline-block;
+	float: left;
+}
+
+p {
+	text-align: justify;
+}
+
+#bold {
+	font-weight: bold;
+}
+
+.navbar-nav > p {
+	width: 100%;
+	text-align: center;
+	float: none;
+	display: inline-block;
+}
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+	border: none;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+#section,
+.flex-container {
+	margin-bottom: 70px;
+}
+
+.section1 {
+	margin-left: 65px;
+	margin-right: 20px;
+}
+
+img {
+	margin-right: 65px;
+	position: -webkit-sticky;
+	position: sticky;
+}
+
+#photo {
+	margin-top: 170px;
+}
