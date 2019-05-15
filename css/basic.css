@@ -1,63 +1,71 @@
 html {
-	overflow: -moz-scrollbars-vertical;
-	overflow-y: scroll;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
 }
 
 body {
-	font-size: 12 px;
-	font-family: sans-serif;
-	background-color: aquamarine;
+  font-size: 12 px;
+  font-family: sans-serif;
+  background-color: aquamarine;
 }
 
 a {
-	color: black;
-}
-
-h2 {
-	margin-top: 100px;
+  color: black;
 }
 
 #underlined {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 #senate-data td,
 footer {
-	padding-right: 5px;
-	padding-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 #senate-data {
-	margin: auto;
+  margin: auto;
 }
 
 #foot {
-	text-align: center;
+  text-align: center;
 }
 
 #rightT {
-	display: inline-block;
-	float: right;
+  display: inline-block;
+  float: right;
 }
 
 #leftT {
-	display: inline-block;
-	float: left;
+  display: inline-block;
+  float: left;
+}
+
+.rightA {
+  text-align: right;
+}
+
+.topM {
+  margin-top: 100px;
 }
 
 p {
-	text-align: justify;
+  text-align: justify;
+}
+
+p.h2 {
+  text-align: center;
 }
 
 #bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .navbar-nav > p {
-	width: 100%;
-	text-align: center;
-	float: none;
-	display: inline-block;
+  width: 100%;
+  text-align: center;
+  float: none;
+  display: inline-block;
 }
 
 .table-borderless > tbody > tr > td,
@@ -66,34 +74,59 @@ p {
 .table-borderless > tfoot > tr > th,
 .table-borderless > thead > tr > td,
 .table-borderless > thead > tr > th {
-	border: none;
+  border: none;
 }
 
 .flex-container {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#no-bottom-margin{
+    margin-bottom: 5px;
 }
 
 #section,
 .flex-container {
-	margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
-.section1 {
-	margin-left: 65px;
-	margin-right: 20px;
+.section1,
+#zonaText {
+  margin-left: 65px;
+  margin-right: 20px;
+}
+
+#zonaText {
+  width: 50%;
+}
+
+#atGlance {
+  margin-right: 20px;
 }
 
 img {
-	margin-right: 65px;
-	position: -webkit-sticky;
-	position: sticky;
+  margin-right: 65px;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 #photo {
-	margin-top: 170px;
+  margin-top: 170px;
+}
+
+.thead-dark {
+  background-color: darkseagreen;
+  border-color: darkcyan;
+  text-align: center;
+}
+
+#ruler {
+  border-style: hidden hidden solid hidden;
+  border-bottom-color: lightgray;
+  text-align: center;
 }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <title>TGIF - Senate Attendance</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/basic.css">
+  </head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logo.jpg" alt="TGIF Logo"> </a>
+        <a class="navbar-brand" href="../index.html"> Home</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress 113 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="house-data.html">House</a></li>
+            <li><a href="senate-data.html">Senate</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="house-attendance.html">House</a></li>
+            <li><a href="#">Senate</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Loyalty<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="house-loyalty.html">House</a></li>
+            <li><a href="senate-loyalty.html">Senate</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="mailto:info@tgif.net?subject=Mail%20from%20Website"><span class="glyphicon glyphicon-envelope"></span> info@tgif.net</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="flex-container"  id="no-bottom-margin">
+        <div id="zonaText">
+            <p class="h2 topM">Attendance</p>
+        <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house. Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in most cases, debates continue even if a majority is not present.</p>
+
+        <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating "aye" or "no" when his or her name is announced. The House reserves roll-call votes for the most formal matters, as a roll-call of all 435 representatives takes quite some time; normally, members vote by electronic device. In the case of a tie, the motion in question fails. In the Senate, the Vice President may (if present) cast the tiebreaking vote.</p>
+</div><!-- zonaText -->
+      
+        <div id="atGlance">
+            <p class="h2 topM">Senate at a glance</p>
+        <table class="table table-responsive table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th class="centerT">Party</th>
+              <th class="centerT">Number of Reps</th>
+              <th class="centerT">% Voted with Prty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Republican</td>
+              <td class="rightA" id="numReps"></td>
+              <td class="rightA" id="votReps"></td>
+            </tr>
+            <tr>
+              <td>Democrat</td>
+              <td class="rightA" id="numDems"></td>
+              <td class="rightA" id="votDems"></td>
+            </tr>
+            <tr>
+              <td>Independent</td>
+              <td class="rightA" id="numIdeps"></td>
+              <td class="rightA" id="votIdeps"></td>
+            </tr>
+          </tbody>
+        </table>
+            </div> <!-- atGlance -->
+    </div> <!-- flex-container -->
+<p id="ruler"></p>
+    <div class="flex-container">
+        <div id="least">
+            <p class="h2">Least Engaged (Bottom 10% Attendance)</p>
+        <table class="table table-responsive table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th class="centerT">Name</th>
+              <th class="centerT">Number of Missed Votes</th>
+              <th class="centerT">% Missed</th>
+            </tr>
+          </thead>
+          <tbody id="leastEngaged"></tbody>
+        </table>
+            </div> <!-- least -->
+
+        <div id="most">
+            <p class="h2">Most Engaged (Top 10% Attendance)</p>
+        <table class="table table-responsive table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th class="centerT">Name</th>
+              <th class="centerT">Number of Missed Votes</th>
+              <th class="centerT">% Missed</th>
+            </tr>
+          </thead>
+          <tbody id="mostEngaged"></tbody>
+        </table>
+
+      </div><!-- most -->
+    </div> <!-- flex-container -->
+    
+  <footer class="navbar navbar-inverse navbar-fixed-bottom navbar-nav">
+    <p class="navbar-text">&copy;2019 TGIF | by Regina (from FullStack Team) | All Rights Reserved</p>
+  </footer>
+    
+  <script src="../js/congress-113-senate.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/statistics.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

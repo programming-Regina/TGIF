@@ -8,7 +8,7 @@ var stateS = document.querySelector("#stateFilter").value; // ESTADO SELECCIONAD
 
 // CREA ARRAY DE ESTADOS ORDENADOS
 function getState(valor, i) {
-    if(!states.includes(valor.state)){
+    if (!states.includes(valor.state)) {
         states.push(valor.state);
     }
 }
@@ -19,29 +19,29 @@ states.sort();
 // CREA MENÚ SELECT DE ESTADOS
 function createMenu() {
     states.forEach(item => {
-       selectS += "<option value=\"" + item + "\">" + item + "</option>";
+        selectS += "<option value=\"" + item + "\">" + item + "</option>";
     });
-    return selectS; 
+    return selectS;
 }
 createMenu();
 document.getElementById("stateFilter").innerHTML = selectS;
 
 
 // RECORRE ARCHIVO CON JSON Y CREA TABLA - MUESTRA MIEMBROS
-function createTable(item, i){ 	    
-	if (item.middle_name == null) {
-		item.middle_name = "";
-	}
-	dataTable += "<tr><td><a href = \"" + item.url + "\" target=_blank>" + item.last_name + ", " + item.first_name + " " + item.middle_name + "</a></td><td class = \"centerT party\">" + item.party + "</td><td class = \"centerT state\">" + item.state + "</td><td class = \"centerT\">" + item.seniority + "</td><td class = \"centerT\">" + item.votes_with_party_pct + " %" + "</td></tr>";
+function createTable(item, i) {
+    if (item.middle_name == null) { // return middle_name || ""
+        item.middle_name = "";
+    }
+    dataTable += "<tr><td><a href = \"" + item.url + "\" target=_blank>" + item.last_name + ", " + item.first_name + " " + item.middle_name + "</a></td><td class = \"centerT party\">" + item.party + "</td><td class = \"centerT state\">" + item.state + "</td><td class = \"centerT\">" + item.seniority + "</td><td class = \"centerT\">" + item.votes_with_party_pct + " %" + "</td></tr>";
 };
 
 
 // FILTRA POR ESTADO
-function filterData(stateS, partyS) { 
-    if (!stateS && partyS.length == 3) {           
-        return dataCorto.forEach(createTable);           
-    }else{ 
-        filterArray = dataCorto.filter(myFilter);    
+function filterData(stateS, partyS) {
+    if (!stateS && partyS.length == 3) {
+        return dataCorto.forEach(createTable);
+    } else {
+        filterArray = dataCorto.filter(myFilter);
         return filterArray.forEach(createTable);
     }
 }
@@ -67,4 +67,3 @@ function refreshTable() { // ACTUALIZA CONTENIDOS
 //CARGA DE DATOS AL INICIO
 filterData(stateS, partyS);
 document.getElementById("sm").innerHTML = dataTable;
-
